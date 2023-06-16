@@ -24,6 +24,7 @@ Depedencies:
   * yarn
   * npm i
   * pnpm i
+  **Don't write issues like yarn not found!!!. If you use yarn in your project use yarn, i prefer pnpm**
 - copy redisConfig.json.example to redisConfig.json*1
   * fill it with your values
 - copy config.env.example to config.env
