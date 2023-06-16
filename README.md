@@ -15,10 +15,10 @@ Feel free to join discord: https://discord.gg/t5njV8cz
 
 # How to run it??
 Depedencies:
-	**Windows 11/10, Linux or macOS**
-	**Node.JS that supports d.js v13**
-	**Working Redis Server**
-	**A keyboard and mouse**
+-	**Windows 11/10, Linux or macOS**
+-	**Node.JS that supports d.js v13**
+-	**Working Redis Server**
+-	**A keyboard and mouse**
 # actual tutorial
 - Install the packages 
   * yarn
