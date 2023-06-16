@@ -6,6 +6,7 @@ export interface DatabaseOptions {
 export interface RedisCustomOptions {
 	host: string,
 	password: string,
-	port: number
+	port: number,
+	maxRetriesPerRequest: number
 }
 //# sourceMappingURL=index.d.ts.map
