@@ -1,0 +1,6 @@
+{
+	"host": "localhost",
+	"port": 6379,
+	"password": "YOUR_REDIS_DATABASE_PASSWORD",
+	"maxRetriesPerRequest": 15
+}
