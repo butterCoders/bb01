@@ -21,8 +21,6 @@ Depedencies:
 -	**A keyboard and mouse**
 # actual tutorial
 - Install the packages 
-  * yarn
-  * npm i
   * pnpm i
   **Don't write issues like yarn not found!!!. If you use yarn in your project use yarn, i prefer pnpm**
 - copy redisConfig.json.example to redisConfig.json*1
