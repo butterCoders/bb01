@@ -34,5 +34,5 @@ client.on('ready', async () => {
 	const parts = process.env.TOKEN.split('.');
 	logger.info(`Wykorzystał do tego token: ${parts[0]}.******.${'*'.repeat(parts[2].length)}`);
 })
-
+new (require('./classes/FileLogDeprecation'))();
 client.login(process.env.TOKEN);
