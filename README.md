@@ -9,18 +9,21 @@ BB01 is a **discord selfbot** that will have some functions
 
 
 # (N)FAQ (Not Frequently Asked Questions)
-What BB01 stands for? ButterBOT 01
 
-# Any way to contact?
+
+## What does BB01 stand for? 
+BB01 stands for **B**utter**B**OT **01**
+
+## Any way to contact?
 Feel free to join discord: https://discord.gg/t5njV8cz
 
-# How to run it??
+## How to run it?
 Depedencies:
 -	**Windows 11/10, Linux or macOS**
 -	**Node.JS that supports d.js v13**
 -	**Working Redis Server**
 -	**A keyboard and mouse**
-# actual tutorial
+### actual tutorial
 - Install the packages 
   * pnpm i
 - copy redisConfig.json.example to redisConfig.json*1
@@ -30,13 +33,15 @@ Depedencies:
 - type `node .`
   * The bot should be running.
 
-# the end
-the bot default prefix is `b1=`
-*1 Alternatively you can setup redis directly in index file
+## How do i exactly use this?
+The default prefix for this selfbot is `b1=`
+Due to the inflexibility of this program, you need to directly change the login details to the redis database in the index.js file. (bad practice)
+
+The line we're talking about is located at line 11:
 ```js
 globalThis.redis = new RedisHandler()
 ```
-change it to:
+You can change it to this:
 ```js
 globalThis.redis = new RedisHandler({
 	host: "localhost",
@@ -45,11 +50,11 @@ globalThis.redis = new RedisHandler({
 	maxRetriesPerRequest: 15
 })
 ```
-Remember: Redis database handler when you provided a "custom" configuration log it into console.
-# removal of this shit
-- go to classes and Database.js
-- find line 20
-- if you want to disable it need to look like this:
+Please remember to change the login details.
+# Removal of the database custom options information
+It's located at the line 20 at the /classes/Database.js file
+
+You can comment it out like in the following snippet of code:
 ```js
 		} else {
 			if (typeof customoptions !== Object) throw SyntaxError("customoptions must be an object")
@@ -57,6 +62,9 @@ Remember: Redis database handler when you provided a "custom" configuration log 
 			options = customoptions
 		}
 ```
-# real the end
-If you found any issues, or you want contribute to the project, use Issues and Pull Requests.
-You can modify the project freely.
+# ending
+ ?|?
+(°? ?7  
+|?~?          
+??_,)?
+You don't have anything better to do, right?
