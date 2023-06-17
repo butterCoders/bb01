@@ -25,7 +25,7 @@ client.on('messageCreate', async (message) => {
 		await command.execute(message, args);
 	} catch (error) {
 		logger.error("BB01: Error executing command: " + command.name);
-		logger.error("BB01: Error: " + error);
+		logger.error("BB01: Error: " + require('util').inspect(error));
 		message.reply(`BB01 Nie mógł wykonać twojego polecenia...`)
 	}
 })
