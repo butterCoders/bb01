@@ -6,8 +6,9 @@ class FileLogDeprecation {
 		const timestamp = `${moment().format('HH-mm-ss')}`;
 		if (!fs.existsSync(`./logs/latest.log`)) return;
 		fs.renameSync(`./logs/latest.log`, `./logs/log-${timestamp}.log`)
-		})
 		process.exit(0)
+		})
+		
 	}
 }
 module.exports = FileLogDeprecation
