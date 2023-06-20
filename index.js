@@ -1,6 +1,7 @@
 const { Client, Collection } = require('discord.js-selfbot-v13');
 const logger = new (require('./classes/Logging'))();
 require('dotenv').config({path: './config.env'})
+const { Configuration } = require('openai')
 const RedisHandler = require('./classes/Database')
 const fs = require('fs');
 const client = new Client({
@@ -16,6 +17,12 @@ for (const file of commandFiles) {
 	logger.info("BB01: Loaded command: " + command.name);
 	client.commands.set(command.name, command);
 }
+// open ai config
+globalThis.openai = new Configuration({
+	apiKey: process.env.OPENAI
+
+})
+// closed ai config
 client.on('messageCreate', async (message) => {
 	if (message.author.bot || !message.content.startsWith(client.prefix)) return;
 	const args = message.content.slice(client.prefix.length).trim().split(/ +/), cmdName = args.shift().toLowerCase();
