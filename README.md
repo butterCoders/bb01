@@ -19,7 +19,7 @@ Feel free to join discord: https://discord.gg/t5njV8cz
 
 ## How to run it?
 Depedencies:
--	**Windows 11/10, Linux or macOS**
+-	**Windows 7+ , Linux or macOS**
 -	**Node.JS that supports d.js v13**
 -	**Working Redis Server**
 -	**A keyboard and mouse**
@@ -64,7 +64,7 @@ You can comment it out like in the following snippet of code:
 ```
 # ending
  ?|?
-(°? ?7  
+(Â°? ?7  
 |?~?          
 ??_,)?
 You don't have anything better to do, right?
